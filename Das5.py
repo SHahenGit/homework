@@ -39,5 +39,5 @@ print((a//b) >= (c**d) or (a//b) == (c+d))'''
 
 client_name = input("Please tell me your name")
 ##print("Ok" + client_name + "Now type Your Year of birth and I will tell You when you will pass your 100 ")
-client_birth_year = int(input("Ok" + client_name + "Now type Your Year of birth and I will tell You when you will pass your 100 "))
+client_birth_year = int(input("Ok" + client_name + "Now type Your Year of birth and I will tell You how many years you have till 100 "))
 print(client_birth_year + 100 - 2019)
