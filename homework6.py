@@ -1,11 +1,14 @@
 # exercise 1
 
-'''text = input("write a text: ")
+text = input("write a text: ")
 
 if " " in text:
 	print("its a sentence")
 else:
 	print("its a word")
+
+
+	
 
 # exercise 2
 
@@ -14,7 +17,7 @@ number = int(input("write a number: "))
 if number % 5 == 0 and number % 11 == 0:	
 	print("yes")
 else:
-	print("no")'''
+	print("no")
 
 
 
