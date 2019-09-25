@@ -12,7 +12,7 @@ if a == b and c > 7:
 	print("A is equal B")
 
 else:
-	print("gggg")'''
+	print("gggg")
 
 
 
@@ -29,8 +29,23 @@ print(length_of_message)
 
 if weather == "cold" and a > b and length_of_message > 3:
 	print("it works")
-	if b < 1:
+	if b > 1:
 		print("b is greater than 1 ")
 	print("if statment ends there")
 
-print("our code ends")
+print("our code ends")'''
+
+
+
+
+a = int(input("number 1: "))
+b = int(input("number 2: "))
+
+if a > b:
+	print("a > b")
+
+elif a < b:
+	print("a < b")
+
+else:
+	print("a = b")
