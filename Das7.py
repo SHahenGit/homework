@@ -29,7 +29,7 @@ print(sum/a)
 some_string = "hello world"
 
 for i in some_string:
-	print(i)'''
+	print(i)
 
 
 
@@ -37,5 +37,26 @@ i = 7
 
 while  i <= 10:
 	print(i)
-	i += 1
+	i += 1 '''
+
+import random
+
+hidden_number = random.randint(1,100)
+
+user_guess = 0
+
+while not user_guess == hidden_number:
+
+	user_guess = int(input("guess a number: "))
+
+	if user_guess > hidden_number:
+		print("too high")
+	elif user_guess < hidden_number:
+		print("too low")
+	else:
+		print("thats right")
+
+
+
+
 
