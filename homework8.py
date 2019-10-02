@@ -45,11 +45,11 @@ def showNumbers(lim):
 	for i in range (0, lim + 1):
 		
 		if i % 2 == 0:
-			print(i, "Even")
+			print (i, "Even")
 		else:
-			print(i, "Odd")
+			print (i, "Odd")
 
 
 lim = int(input("Enter a number: "))
 
-print(showNumbers(lim))
+showNumbers(lim)
