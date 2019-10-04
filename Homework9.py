@@ -20,7 +20,7 @@ temp = int(input("Input temperature in celsius: "))
 print((celtofar(temp)), "fahrenheit")
 
 
-
+ 
 
 #exercise 3
 
@@ -40,10 +40,10 @@ def wordcounter(sent):
 	for i in sent[1:len(sent)]:
 		
 		if i != " " and j == " ":
-			print(i, "start")
+			# print(i, "start")
+			pass
 		if i == " " and j != " ":
-			print(i, "end")
-
+			# print(i, "end")
 			count += 1
 		j = i
 
@@ -58,7 +58,7 @@ def wordcounter(sent):
 
 sent = input("write a sentence: ")
 start = wordcounter(sent)
-print(start)
+print("words quantity: ", start)
 
 
 #exercise5
