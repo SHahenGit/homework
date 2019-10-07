@@ -28,5 +28,10 @@ except TypeError:
 except:
 	print("Unknown error")
 
+else:
+	print("no errors occured")
+
 
 print("Done!")
+
+
