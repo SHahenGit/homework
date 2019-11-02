@@ -16,6 +16,8 @@ while True:
 			else:
 				print(list1[i], end = " " )
 
+
+
 	def comp_choice(list1, list2):
 		loop = "not over"
 		while loop == "not over":
@@ -25,19 +27,23 @@ while True:
 					print("comp choice is ", list1[i])
 					list2 = list2.replace(str(list1[i]), "")
 					list1[i] = "O"
-					loop = "over"	
-			
-
+					loop = "over"
 		return list1, list2
+
+
+
 
 	def user_choice(list1, list2):  #list1 - big list, list2 - user choice list
 		while True:
-			num = int(input("enter a number btwn  " + list2 + "  "))
-			if num in list1:
-				list1[num -1] = "X"
-				list2 = list2.replace(str(num), "")
-				return list1, list2
-				break
+			try:
+				num = int(input("enter a number btwn  " + list2 + "  "))
+				if num in list1:
+					list1[num -1] = "X"
+					list2 = list2.replace(str(num), "")
+					return list1, list2
+					break
+			except:
+				print("please enter a number")
 			
 
 
