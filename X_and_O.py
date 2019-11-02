@@ -8,6 +8,7 @@ big_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
 while True:
+
 	def print_game(list1):
 		for i in range(0, len(list1)):
 			if (i != 0 and i == 2) or (i != 0 and i == 5) or (i != 0 and i == 8):
@@ -16,23 +17,28 @@ while True:
 				print(list1[i], end = " " )
 
 	def comp_choice(list1, list2):
-		while True:
+		loop = "not over"
+		while loop == "not over":
 			num = random.randint(1,9)			
-			for i in range(0, len(list1)):								
+			for i in range(0, len(list1)):										
 				if num == list1[i]:
 					print("comp choice is ", list1[i])
 					list2 = list2.replace(str(list1[i]), "")
 					list1[i] = "O"
-					
-			break
+					loop = "over"	
+			
 
 		return list1, list2
 
 	def user_choice(list1, list2):  #list1 - big list, list2 - user choice list
-		num = int(input("enter a number btwn  " + list2 + "  "))
-		list1[num -1] = "X"
-		list2 = list2.replace(str(num), "")
-		return list1, list2
+		while True:
+			num = int(input("enter a number btwn  " + list2 + "  "))
+			if num in list1:
+				list1[num -1] = "X"
+				list2 = list2.replace(str(num), "")
+				return list1, list2
+				break
+			
 
 
 	
@@ -53,16 +59,16 @@ while True:
 			(big_list[0] == big_list[4] == big_list[8] == "X") or
 			(big_list[2] == big_list[4] == big_list[6] == "X")):
 
-			print("you WIN")
+		print("you WIN")
 
-			break
+		break
 
 
 	big_list, user_choice_list = comp_choice(big_list, user_choice_list)
 	print_game(big_list)
 	
 
-	if ((big_list[0] == big_list[1] == big_list[2] == "or") or
+	if ((big_list[0] == big_list[1] == big_list[2] == "O") or
 			(big_list[3] == big_list[4] == big_list[5] == "O") or
 			(big_list[6] == big_list[7] == big_list[8] == "O") or
 			(big_list[0] == big_list[3] == big_list[6] == "O") or
@@ -74,6 +80,8 @@ while True:
 		print("you LOSE")
 
 		break
+
+
 
 
 
